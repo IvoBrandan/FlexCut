@@ -75,6 +75,7 @@ body{
     color: var(--secondary);
     text-align: center;
     letter-spacing: 0.15em;
+    line-height: 2em;
 }
 /*section*/
 
@@ -118,7 +119,6 @@ body{
     background-image: url(../images/utilidades/backgroundsilla.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 /*Inicio header*/
@@ -177,6 +177,8 @@ body{
 }*/
 .presentation__paragraph{
     margin: 4em 0 5em 0;
+    max-width: 800px;
+
 }
 /*Fin main*/
 
@@ -187,6 +189,7 @@ body{
     flex-wrap: wrap;
     gap: 2em;
     align-items: center;
+    margin-top: 20px;
 }
 
 .section__tittle{
