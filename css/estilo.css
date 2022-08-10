@@ -244,8 +244,8 @@ body{
 /*Inicio Productos*/
 .container__tienda{
     display: grid;  
-    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(3,1fr );
+    grid-template-rows:repeat(2, 1fr );
     gap: 1rem;
     padding: 0 10rem;
     justify-content: center;
@@ -578,6 +578,15 @@ input:focus{
         flex-direction: column;
         align-items: center;
     }
+    .container__tienda{
+        display: grid;  
+        grid-template-columns: repeat(2,1fr );
+        grid-template-rows:repeat(3, 1fr );
+        gap: 1rem;
+        padding: 0 10rem;
+        justify-content: center;
+    
+    }
 }
 
 @media (max-width:900px){
@@ -724,13 +733,21 @@ input:focus{
         flex-direction: column;
         margin: 0;
         }
-        .container__tienda{
-           
-            padding: 0;
-            
-        }
+    
     
 
+}
+
+@media (max-width:600px){
+    .container__tienda{
+        display: grid;  
+        grid-template-columns: repeat(1,1fr );
+        grid-template-rows: auto;
+        gap: 1rem;
+        padding: 0 10rem;
+        justify-content: center;
+    
+    }
 }
 
 @media (max-width:480px){
@@ -875,5 +892,8 @@ input:focus{
     }
     .btn{
         padding: 1em ,2em;
+    }
+    .container__tienda{
+        padding: 0 3rem;
     }
 }
