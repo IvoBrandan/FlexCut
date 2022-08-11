@@ -140,10 +140,13 @@ body{
 .nav__list{
     display: flex;
     align-items: center;
-    gap: 2rem;
     justify-content: space-evenly;
-
+    width: 100%;
+    margin: 5px;
+    
 }
+
+
 
 .nav__link--active{
     padding: 5px;
@@ -299,6 +302,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 /*Fin productos*/
@@ -467,17 +471,25 @@ body{
     margin: 10px 10px 10px 10px;
 
     text-shadow: 0 1px 0 rgba(255,255,255,0.3) ;
-
+    transition:background-color ease-in .3s;
 }
+
+
 
 .btn-green{ 
     color:#fff;
     background-color: #07bd56;
 }
+.btn-green:hover{
+    background-color: var(--accent);
+}
 
 .btn-red{
     color:#fff;
     background-color: #bd0707;
+}
+.btn-red:hover{
+    background-color: var(--primary);
 }
 
 
@@ -733,11 +745,16 @@ input:focus{
         flex-direction: column;
         margin: 0;
         }
+<<<<<<< HEAD
     
+=======
+   
+>>>>>>> animate
     
 
 }
 
+<<<<<<< HEAD
 @media (max-width:600px){
     .container__tienda{
         display: grid;  
@@ -749,6 +766,8 @@ input:focus{
     
     }
 }
+=======
+>>>>>>> animate
 
 @media (max-width:480px){
     .header{
@@ -853,7 +872,7 @@ input:focus{
         justify-content: space-evenly;
     }
     .turnos__selection-btn {
-        padding: 10px 10px;
+        padding: 5px 5px;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
@@ -861,9 +880,16 @@ input:focus{
     .btn{
         padding: 1em ,2em;
     }
+    .container__tienda {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: repeat(auto-fit,minmax(300px,1fr));
+        gap: 1rem;
+        padding: 0 3rem;
+        justify-content: center;
+    }
 }
     
-}
 
 @media (max-width:380px){
     .header{
@@ -893,7 +919,21 @@ input:focus{
     .btn{
         padding: 1em ,2em;
     }
+<<<<<<< HEAD
     .container__tienda{
         padding: 0 3rem;
     }
+=======
+    .container__tienda {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: repeat(auto-fit,minmax(300px,1fr));
+        gap: 1rem;
+        padding: 0 1rem;
+        justify-content: center;
+    }
+    .turnos__selection-btn {
+        padding: 0px 0px;
+        }
+>>>>>>> animate
 }
