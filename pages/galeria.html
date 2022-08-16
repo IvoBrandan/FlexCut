@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <Flex-Cut> </title>
+    <link rel="stylesheet" href="..//css/bootstrap.min.css">            
     <link rel="shortcut icon" href="../images/iconos/logoiniciochico.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -38,42 +39,98 @@
     </header>
 
                         <!--Fin header-->
-                        <!--Inicio Section-->
-
-    <section class="gallery container">
+                        <!--Inicio Galeria-->
+<section>
+    <article id="carouselExampleIndicators" class="container__galeria carousel slide pointer-event" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
                 <h2 class="gallery__subtittle tittle__big">CORTES MODERNOS</h2>
-                <picture class="gallery__cards">
-                    <img src="../images/cortes/elian2.jpg">
-                </picture>
-                <picture class="gallery__cards">
-                    <img src="../images/cortes/crestadani.jpg">
-                </picture>
-                <picture class="gallery__cards">
-                    <img src="../images/cortes/nene1.jpg">
-                </picture>
+                <div class="carousel-item active">
+                <img src="../images/cortes/elian2.jpg" class="d-block w-100" alt="corte moderno">
+                </div>
+                <div class="carousel-item">
+                <img src="../images/cortes/crestadani.jpg" class="d-block w-100" alt="corte moderno">
+                </div>
+                <div class="carousel-item">
+                <img src="../images/cortes/nene1.jpg" class="d-block w-100" alt="corte moderno">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+    </article>
+    <article id="carouselExampleIndicators2" class="container__galeria carousel slide pointer-event" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
                 <h2 class="gallery__subtittle tittle__big">CAMBIOS DE LOOK</h2>
-                <picture class="gallery__cards">
-                    <img src="../images/cortes/cambiodelookantes.jpg"> 
-                </picture>
-                <picture class="gallery__cards">
-                    <img src="../images/cortes/cambiodelookdespues.jpg">
-                </picture>
-                <picture class="gallery__cards">
-                    <img src="../images/cortes/cambiodelookdespues2.jpg">
-                </picture>
+                <div class="carousel-item active">
+                <img src="../images/cortes/cambiodelookantes.jpg" class="d-block w-100" alt="cambios de look">
+                </div>
+                <div class="carousel-item">
+                <img src="../images/cortes/cambiodelookdespues.jpg" class="d-block w-100" alt="cambios de look">
+                </div>
+                <div class="carousel-item">
+                <img src="../images/cortes/cambiodelookdespues2.jpg" class="d-block w-100" alt="cambios de look">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+    </article>
+    <article id="carouselExampleIndicators3" class="container__galeria carousel slide pointer-event" data-bs-ride="true">
+            <div class="carousel-inner">
                 <h2 class="gallery__subtittle tittle__big">COLORES</h2>
-                <picture class="gallery__cards">
-                    <img src="../images/cortes/colorlea3.jpg">
-                </picture>
-                <picture class="gallery__cards">
-                    <img src="../images/cortes/colorelian1.jpg"> 
-                </picture>
-                <picture class="gallery__cards">
-                    <img src="../images/cortes/colorveno2.jpg"> 
-                </picture>
-    </section>    
+                <div class="carousel-item active">
+                <img src="../images/cortes/colorlea3.jpg" class="d-block w-100" alt="colores">
+                </div>
+                <div class="carousel-item">
+                <img src="../images/cortes/colorelian1.jpg" class="d-block w-100" alt="colores">
+                </div>
+                <div class="carousel-item">
+                <img src="../images/cortes/colorveno2.jpg" class="d-block w-100" alt="colores">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+    </article>
+</section>
+        
 
-                        <!--Fin section-->  
+                        <!--Fin Galeria-->  
                             <!--Inicio Footer-->
 
     <footer class="footer">
@@ -97,6 +154,7 @@
             </div>
         </article>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 
                             <!--Fin footer-->
 </body>
