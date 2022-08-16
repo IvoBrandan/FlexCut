@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <Flex-Cut> </title>
+    <link rel="stylesheet" href="..//css/bootstrap.min.css">    
     <link rel="shortcut icon" href="../images/iconos/logoiniciochico.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -38,6 +39,9 @@
 
                         <!--Fin header-->
                         <!--Inicio Tienda-->
+
+<!--
+
     <nav class="tienda__nav">
                             <ul >
                                 <li>
@@ -60,33 +64,70 @@
                                 </li>
                             </ul>
     </nav>
-    <div class="container__tienda container">
-        <article class="tienda__producto">
+-->
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../pages/tienda.html">Tienda</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Insumos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Herramientas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Maquinas
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>        
+    </div>
+
+    <div class= "container row">
+        <article class="tienda__producto col-md-4 col-sm-6">
             <img src="../images/productos/aceitecoco 1.jpg" alt="aceite de coco">
             <h4 class="text-xs">BEARD OIL LEGENDS x30ml</h4>
             <input class="buttom" type="button" value="AGREGAR AL CARRITO">
         </article>
-        <article class="tienda__producto">
+        <article class="tienda__producto col-md-4  col-sm-6">
             <img src="../images/productos/gel 1.jpg" alt="gel">
             <h4 class="text-xs">GEL GENERICO x250ml</h4>
             <input class="buttom" type="button" value="AGREGAR AL CARRITO">
         </article>
-        <article class="tienda__producto">
+        <article class="tienda__producto col-md-4 col-sm-6">
             <img src="../images/productos/mascaramatizadora 1.jpg" alt="mascaramatizadora">
             <h4 class="text-xs">MASCARA MATIZADORA x250ml</h4>
             <input class="buttom" type="button" value="AGREGAR AL CARRITO">
         </article>
-        <article class="tienda__producto">
+        <article class="tienda__producto col-md-4 col-sm-6">
             <img src="../images/productos/shampoomatizador 1.jpg" alt="shampoomatizador">
             <h4 class="text-xs">SHAMPOO MATIZADOR x1000ml</h4>
             <input class="buttom" type="button" value="AGREGAR AL CARRITO">
         </article>
-        <article class="tienda__producto">
+        <article class="tienda__producto col-md-4 col-sm-6">
             <img src="../images/productos/polvotexturizador 1.jpg" alt="polvotexturizador">
             <h4 class="text-xs">POLVO TEXTURIZADOR x20g</h4>
             <input class="buttom" type="button" value="AGREGAR AL CARRITO">
         </article>
-        <article class="tienda__producto">
+        <article class="tienda__producto col-md-4 col-sm-6">
             <img src="../images/productos/pomada 1.jpg" alt="pomada">
             <h4 class="text-xs">POMADA MATE x50g</h4>
             <input class="buttom" type="button" value="AGREGAR AL CARRITO">
@@ -115,6 +156,7 @@
             </div>
         </article>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 
                             <!--Fin footer-->
 </body>
