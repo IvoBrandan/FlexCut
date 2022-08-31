@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <Flex-Cut> </title>
-    <link rel="shortcut icon" href="./images/iconos/logoiniciochico.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="..//css/bootstrap.min.css"> 
+    <link rel="shortcut icon" href="./images/iconos/logoiniciochico.svg" type="image/x-icon"> 
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
@@ -15,38 +13,39 @@
                             <!-- Inicio header -->
 <div class="container__inicio">
     <header class="header">
-        <nav class="nav container">
-            <a class="header__logo animate__animated animate__pulse" href="./index.html">
-                <img src="./images/iconos/logoiniciochico.svg" alt="flexCutArg">
-            </a>
-            <ul class="nav__list">
-                <div  class="nav__link--active link__text">
-                    <li><a href="index.html">INICIO</a></li>
-                </div>
-                <div class="nav__link link__text">
-                    <li><a href="./pages/galeria.html">GALERIA</a></li>
-                </div>
-                <div class="nav__link link__text">
-                    <li><a href="./pages/turnos.html">TURNOS</a></li>
-                </div>
-                <div class="nav__link link__text">
-                    <li><a href="./pages/tienda.html">TIENDA</a></li>
-                </div>
-                <div class="nav__link link__text">
-                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                </div>            
-            </ul>
+        <nav class="header__nav">
+            <div>
+                <a class="nav__logo" href="./index.html">
+                    <img src="./images/iconos/logoiniciochico.svg" alt="flexCutArg">
+                </a>
+            </div>
+            <div>
+                <ul class="nav__list">
+                    <div  class="nav__btn">
+                        <li><a class="nav__btn--1 link__text" href="index.html">INICIO</a></li>
+                    </div>
+                    <div class="nav__btn">
+                        <li><a class="nav__btn--1 link__text" href="./pages/galeria.html">GALERIA</a></li>
+                    </div>
+                    <div class="nav__btn">
+                        <li><a class="nav__btn--1 link__text" href="./pages/turnos.html">TURNOS</a></li>
+                    </div>
+                    <div class="nav__btn">
+                        <li><a class="nav__btn--1 link__text" href="./pages/tienda.html">TIENDA</a></li>
+                    </div>
+                    <div class="nav__btn">
+                        <li><a class="nav__btn--1 link__text" href="./pages/contacto.html">CONTACTO</a></li>
+                    </div>            
+                </ul>
+            </div>
         </nav>
     </header>
-
-                         <!--Fin header-->
-                        <!--Inicio main-->
-
-    <main class="presentation container">
-        <div class="presentation__tittle">
-            <h2 class="tittle__big">Bienvenidos a</h2>
-        </div>
-        <div class="presentation__logo animate__animated animate__zoomIn">
+    
+    <!--Fin header-->
+    <!--Inicio main-->
+    
+    <main class=" container presentation">
+        <div class="presentation__logo">
             <img src="./images/iconos/logograndesinfondo.svg" alt="Logo Flexcut Barber Studio"> 
         </div>
         <div class="presentation__paragraph">
@@ -64,71 +63,78 @@
 
                         <!--Inicio section-->
 
-    <section class="section container">
-        <div class="section__tittle ">
-            <h2 class="tittle__big ">NUESTROS SERVICIOS</h2>
-        </div>
-        <div class="cards">
-                <h3 class="subtittle-md">CORTE</h3>
-                <article class="text-xs">
-                    Clásico o moderno. Marcamos tendencia combinando máquinas y tijeras.
-                </article>
-                <button type="button" class="btn-card btn btn-outline-dark">Ver más</button>
+    <section class="container section">
 
-                    <!--Hacer boton Ver más-->
+        <div class="section__tittle">
+            <h2 class="tittle__big">NUESTROS SERVICIOS</h2>
         </div>
-        <div class="cards">
-            <h3 class="subtittle-md">BARBA</h3>
-                <article class="text-xs">
+
+        <div class="section__card">
+            <article class="card">
+                <h3 class="subtittle-md">CORTE</h3>
+                <p class="text-xs">
+                    Clásico o moderno. Marcamos tendencia combinando máquinas y tijeras.
+                </p>
+                <button>Ver más</button>
+            </article>
+
+            <article class="card">
+                <h3 class="subtittle-md">BARBA</h3>
+                <p class="text-xs">
                     Afeitada tradicional o recorte de barba. Contamos con el servicio de toalla caliente.
-                </article>
-                <button type="button" class="btn-card btn  btn-outline-dark">Ver más</button>
-                <!--Hacer boton Ver más-->
-        </div>
-        <div class="cards">          
-            <h3 class="subtittle-md">COLOR</h3>
-                <article class="text-xs">
+                </p>
+                <button>Ver más</button>
+            </article>
+            
+            <article class="card">         
+                <h3 class="subtittle-md">COLOR</h3>
+                <p class="text-xs">
                     Las tendencias y los tonos cambian... Animate vos también.
-                </article>
-                <button type="button" class="btn-card btn btn-outline-dark">Ver más</button>
-                <!--Hacer boton Ver más-->
-        </div>
-        <div class="cards">      
-            <h3 class="subtittle-md">NIÑOS</h3>
-                <article class="text-xs">
+                </p>
+                <button>Ver más</button>
+            </article>
+
+            <article class="card">
+                <h3 class="subtittle-md">NIÑOS</h3>
+                <p class="text-xs">
                     Hoy en dia ello saben lo que quieren, por eso atendemos sus antojos.
-                </article>
-                <button type="button" class="btn-card btn btn-outline-dark">Ver más</button>
-                <!--Hacer boton Ver más-->
+                </p>
+                <button>Ver más</button>
+            </article>
         </div>
-    </section>
+
 
                             <!--Fin Section-->
 
                             <!--Inicio Footer-->
 
-    <footer class="footer">
-        <article class="container">
-            <div class="footer__container">
-                <section class="footer__card">
-                <H3 class="subtittle-md">SEGUINOS EN NUESTRAS REDES</H3>
-                    <ul class="nav__list">
-                        <li class="footer__link"><a href="https://www.instagram.com/ivoocutz/"><img src="./images/iconos/instagram.png" alt="logo de Instagram"></a></li>
-                        <li class="footer__link"><a href="https://www.facebook.com/"><img src="./images/iconos/facebook 1.png" alt="logo de Facebook"></a></li>
-                        <li class="footer__link"><a href="https://www.tiktok.com/"><img src="./images/iconos/tik-tok1.png" alt="logo de TikTok"></a></li>
-                        <li class="footer__link"><a href="https://www.youtube.com/"><img src="./images/iconos/youtube.png" alt="logo de Youtube"></a></li>
-                    </ul>
-                </section>
-                <section class="footer__card">
-                    <p class="subtittle-md"> Copyright @ 2022 Derechos reservados<br> FlexCut S.A | Design: Ivo Brandán</p>
-                </section>
-                <section class="footer__card">
-                    <p class="subtittle-md"> Contacto: 11 6715-1647 <br>Email: flexcutsarg@gmail.com</p>
-                </section>
-            </div>
-        </article>
+    <footer class="container footer">
+        <div class="footer__card">
+            <H3 class="subtittle-md">SEGUINOS EN NUESTRAS REDES</H3>
+            <ul class="footer__list">
+                <li>
+                    <a class="footer__link" href="https://www.instagram.com/ivoocutz/"><img src="./images/iconos/instagram.png" alt="logo de Instagram"></a>
+                </li>
+                <li>
+                    <a class="footer__link"href="https://www.facebook.com/"><img src="./images/iconos/facebook 1.png" alt="logo de Facebook"></a>
+                </li>
+                <li>
+                    <a class="footer__link" href="https://www.tiktok.com/"><img src="./images/iconos/tik-tok1.png" alt="logo de TikTok"></a>
+                </li>
+                <li>
+                    <a class="footer__link" href="https://www.youtube.com/"><img src="./images/iconos/youtube.png" alt="logo de Youtube"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__card">
+            <p class="subtittle-md"> Copyright @ 2022 Derechos reservados<br> FlexCut S.A | Design: Ivo Brandán</p>
+        </div>
+
+        <div class="footer__card">
+            <p class="subtittle-md"> Contacto: 11 6715-1647 <br>Email: flexcutsarg@gmail.com</p>
+        </div>
     </footer>
-    <script src="../js/bootstrap.min.js"></script>
 
                             <!--Fin footer-->
 

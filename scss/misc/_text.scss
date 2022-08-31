@@ -1,0 +1,49 @@
+/*Clases de textos*/
+
+/*main*/
+.tittle__big{
+    font-family:  $titles;
+    font-size:  $text-lg;
+    color:  $secondary;
+    letter-spacing: 0.15em;
+}
+
+.paragraph__text--big{
+    font-family:  $texts;
+    font-size:   $text-md;
+    color:  $secondary;
+    text-align: center;
+    letter-spacing: 0.15em;
+    line-height: 2em;
+}
+/*section*/
+
+.subtittle-md{
+    text-align: center;
+    color: #fff;
+    font-family:  $titles;
+    font-size:  $text-md;
+}
+
+.text-xs{
+    text-align: center;
+    color:  $secondary;
+    font-family:  $texts;
+    font-size:  $text-sm;
+}
+
+/*Footer*/
+
+.link__text{
+    font-family: $links;
+    font-size: $text-md;
+    color: $secondary;
+}
+
+.link__text--big{
+    font-family:  $links;
+    font-size:  $text-lg;
+    color: $secondary;
+}
+
+/*fin clases de textos*/

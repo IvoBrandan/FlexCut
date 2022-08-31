@@ -1,0 +1,63 @@
+
+/*Inicio Main*/
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    padding: 0 10rem;
+
+    .presentation__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    
+    }
+    .presentation__paragraph{
+        min-width: auto;
+        padding: 2rem;
+    }
+}
+
+
+
+/*Fin main*/
+
+/*Inicio Section*/
+.section{
+    padding: $spacing-sm;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center; 
+
+    .section__tittle{
+        padding: $spacing-sm;
+    }
+    
+    .section__card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .card{
+            width: 450px;
+            height: 220px;
+            display: flex;
+            border: 1px solid $accent;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: auto;
+            margin: $spacing-sm;
+            padding: $spacing-sm;
+        }
+    }
+    }
+
+/*Fin section*/
