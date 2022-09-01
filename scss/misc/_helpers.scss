@@ -1,0 +1,27 @@
+/*Helpers*/
+
+.container{
+    margin:0 auto;
+    max-width: 1200px;
+    height: calc( 100% - 100px);
+}
+
+.container__inicio{
+    margin: 0 auto;
+    max-width: 1200px;
+    height: calc( 100% - 100px);
+    background-image: url(../images/utilidades/backgroundsilla.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.container__galeria{
+    max-width: 1200px;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+}

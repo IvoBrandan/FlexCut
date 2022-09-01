@@ -1,0 +1,123 @@
+
+/*Inicio sistema turnos*/
+
+
+.turnos__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    max-width: 1200px;
+    height: 100px;
+    border: 1px solid $accent;
+}
+
+.turnos__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.turnos__selection-day{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.turnos__selection-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+.calendary__grid{
+    max-width: 500px;
+  
+}
+
+.first__day{
+    grid-column-start: 1;
+}
+
+.day__name{
+    background: $shadow-dark;
+    text-align: center;
+    color: #ffffff;
+    font-size: $spacing-sm;
+}
+
+.turnos__selection-horario{
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+
+}
+
+.turnos__selection-btn{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btn-card{
+    font-family: $links;
+    font-size: $text-sm;
+    border-radius: 3px;
+    padding: .5em;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 10px 10px 10px;
+}
+
+.btn{
+    font-family: $links;
+    font-size: $text-sm;
+    border-radius: 3px;
+    display: inline-block;
+    
+    text-decoration: none;
+    margin: 10px 10px 10px 10px;
+
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3) ;
+    transition:background-color ease-in .3s;
+}
+
+
+
+.btn-green{ 
+    color:#fff;
+    background-color: #07bd56;
+}
+.btn-green:hover{
+    background-color: $accent;
+}
+
+.btn-red{
+    color:#fff;
+    background-color: #bd0707;
+}
+.btn-red:hover{
+    background-color: $primary;
+}
+
+
+li{
+    text-align: center;
+    color: $secondary;
+    font-size: $text-xs;
+}
+ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    padding: 0px;
+    row-gap: 1rem;
+}
+/*Fin sistema turnos*/ 

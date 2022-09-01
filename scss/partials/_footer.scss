@@ -1,0 +1,35 @@
+
+/*Inicio footer*/
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    .footer__card {
+        min-width: 200px;
+        min-height: 70px;
+        border: 2px solid $accent;
+        padding: 5px;
+
+        .footer__list{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+       .footer__link{
+        display: inline-block; 
+        }
+    }
+}
+
+
+
+
+/*Fin footer*/

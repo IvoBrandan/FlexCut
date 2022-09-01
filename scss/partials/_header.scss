@@ -1,0 +1,65 @@
+.header{
+    padding: 1em 2em 1em 2em ;
+    width: auto;
+    position: sticky;
+    top: 0;
+    background-color: $primary;
+    .header__nav{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 10em;
+        padding-left: 10em;
+        height: auto;
+
+        & .nav__logo{
+            display: block ;
+            min-width: 100px;
+            margin-right:20px;
+            cursor: pointer;
+
+            & img{
+                transition: all 0.3s;
+
+                &:hover{
+                    transform: scale;
+                }
+            }
+
+        }
+        .nav__list{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .nav__btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20%;
+                height: auto;
+                
+                .nav__btn--1{
+                    padding: 5px 15px;
+                    text-decoration: none;
+                    color: $secondary;
+                    transition: .4s ease;
+                    border-radius: 15%;
+                    
+                    &:hover{
+                        color: $primary;
+                        background-color:$accent;
+                        box-shadow: 0 0 10px $accent,
+                        0 0 30px $accent,
+                        0 0 70px $accent,
+                        0 0 130px $accent,
+                    }
+                }
+            } 
+        }
+    }
+}
+
+
+/*Fin header*/

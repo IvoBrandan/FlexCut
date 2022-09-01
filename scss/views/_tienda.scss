@@ -1,0 +1,31 @@
+
+/*Inicio Productos*/
+
+
+.tienda__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.tienda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tienda__producto{
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--accent);
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Fin productos*/
