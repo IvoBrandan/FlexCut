@@ -10,13 +10,14 @@
     align-items: center;
     max-width: 1200px;
     height: 100px;
-    border: 1px solid var(--accent);
+    border: 1px solid $accent;
 }
 
 .turnos__container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 10px;
 }
 
 .turnos__selection-day{
@@ -45,16 +46,15 @@
 }
 
 .day__name{
-    background: var(--shadow-dark);
+    background: $shadow-dark;
     text-align: center;
     color: #ffffff;
-    font-size: var(--spacing-sm);
+    font-size: $spacing-sm;
 }
 
 .turnos__selection-horario{
     display: flex;
     flex-direction: column;
-
     margin:20px;
 
 }
@@ -67,8 +67,8 @@
 }
 
 .btn-card{
-    font-family: var(--links);
-    font-size: var(--text-sm);
+    font-family: $links;
+    font-size: $text-sm;
     border-radius: 3px;
     padding: .5em;
     display: inline-block;
@@ -77,8 +77,8 @@
 }
 
 .btn{
-    font-family: var(--links);
-    font-size: var(--text-sm);
+    font-family: $links;
+    font-size: $text-sm;
     border-radius: 3px;
     display: inline-block;
     
@@ -96,7 +96,7 @@
     background-color: #07bd56;
 }
 .btn-green:hover{
-    background-color: var(--accent);
+    background-color: $accent;
 }
 
 .btn-red{
@@ -104,14 +104,14 @@
     background-color: #bd0707;
 }
 .btn-red:hover{
-    background-color: var(--primary);
+    background-color: $primary;
 }
 
 
 li{
     text-align: center;
-    color: var(--secondary);
-    font-size: var(--text-xs);
+    color: $secondary;
+    font-size: $text-xs;
 }
 ol{
     list-style: none;
