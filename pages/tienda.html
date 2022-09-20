@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <Tienda> </title>
-    <link rel="stylesheet" href="..//css/bootstrap.min.css">    
+    <title> <Tienda> </title>    
     <link rel="shortcut icon" href="../images/iconos/logoiniciochico.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body >
                     <!-- Inicio header -->
 
-  <div class="container">
-        <header class="header">
-             <nav class="header__nav">
-                 <div>
-                     <a class="nav__logo" href="./index.html">
-                         <img src="../images/iconos/logoiniciochico.svg" alt="flexCutArg">
-                     </a>
-                 </div>
-                 <div>
-                     <ul class="nav__list">
-                         <div  class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../index.html">INICIO</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/galeria.html">GALERIA</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/turnos.html">TURNOS</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/tienda.html">TIENDA</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/contacto.html">CONTACTO</a></li>
-                         </div>            
-                     </ul>
-                 </div>
-             </nav>
-         </header>
-    </div>
+<header class="container__inicio">
+    <nav class="nav">
+        <div class="nav__container">
+            <h1 class="nav__logo">
+                <img src="../images/iconos/logoiniciochico.svg">
+            </h1>
+
+            <label for="menu" class="nav__label">
+                <img src="../images/iconos/menu.svg">
+            </label>
+            <input type="checkbox" id="menu" class="nav__input">
+
+            <div class="nav__menu">
+                <div class="nav__btn">
+                    <a href="../index.html" class="nav__item link__text">INICIO</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./galeria.html" class="nav__item link__text">GALERIA</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./turnos.html" class="nav__item link__text">TURNOS</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./tienda.html" class="nav__item link__text">TIENDA</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./contacto.html" class="nav__item link__text">CONTACTO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
                         <!--Fin header-->
                         <!--Inicio Tienda-->
@@ -49,56 +50,53 @@
         <nav class="tienda__nav">
             <ul>
                 <li>
-                    <a class="link__text" href="">PRODUCTOS</a>                    
+                    <a class="link__text" href="#productos">PRODUCTOS
+                    </a>                    
                 </li>
                 <li>
-                    <a class="link__text" href="">MAQUINAS Y PARTES</a>                
+                    <a class="link__text" href="">MAQUINAS Y PARTES </a>                
                 </li>
-                <li>
-                    <a class="link__text" href="">EQUIPAMENTO</a>                
-                </li>
+                
                 <li>
                     <a class="link__text" href="">TIJERAS Y NAVAJAS</a>                
                 </li>
                 <li>
                     <a class="link__text" href="">ACCESORIOS</a>                
                 </li>
-                <li>
-                    <a class="link__text" href="">HERRAMIENTAS</a>                    
-                </li>
+                
             </ul>
         </nav>
         
         <div class= "tienda">
-            <article class="tienda__producto">
+            <article id="productos" class="tienda__producto">
                 <img src="../images/productos/aceitecoco 1.jpg" alt="aceite de coco">
                 <h4 class="text-xs">BEARD OIL LEGENDS x30ml</h4>
-                <input class="buttom" type="button" value="AGREGAR AL CARRITO">
+                <a href="#" class="boton" >AGREGAR AL CARRITO</a>
             </article>
-            <article class="tienda__producto">
+            <article id="productos" class="tienda__producto">
                 <img src="../images/productos/gel 1.jpg" alt="gel">
                 <h4 class="text-xs">GEL GENERICO x250ml</h4>
-                <input class="buttom" type="button" value="AGREGAR AL CARRITO">
+                <a href="#" class="boton" >AGREGAR AL CARRITO</a>
             </article>
-            <article class="tienda__producto">
+            <article id="productos" class="tienda__producto">
                 <img src="../images/productos/mascaramatizadora 1.jpg" alt="mascaramatizadora">
                 <h4 class="text-xs">MASCARA MATIZADORA x250ml</h4>
-                <input class="buttom" type="button" value="AGREGAR AL CARRITO">
+                <a href="#" class="boton" >AGREGAR AL CARRITO</a>
             </article>
-            <article class="tienda__producto">
+            <article id="productos" class="tienda__producto">
                 <img src="../images/productos/shampoomatizador 1.jpg" alt="shampoomatizador">
                 <h4 class="text-xs">SHAMPOO MATIZADOR x1000ml</h4>
-                <input class="buttom" type="button" value="AGREGAR AL CARRITO">
+                <a href="#" class="boton" >AGREGAR AL CARRITO</a>
             </article>
-            <article class="tienda__producto">
+            <article id="productos" class="tienda__producto">
                 <img src="../images/productos/polvotexturizador 1.jpg" alt="polvotexturizador">
                 <h4 class="text-xs">POLVO TEXTURIZADOR x20g</h4>
-                <input class="buttom" type="button" value="AGREGAR AL CARRITO">
+                <a href="#" class="boton" >AGREGAR AL CARRITO</a>
             </article>
-            <article class="tienda__producto">
+            <article id="productos" class="tienda__producto">
                 <img src="../images/productos/pomada 1.jpg" alt="pomada">
                 <h4 class="text-xs">POMADA MATE x50g</h4>
-                <input class="buttom" type="button" value="AGREGAR AL CARRITO">
+                <a href="#" class="boton" >AGREGAR AL CARRITO</a>
             </article>
         </div>
     </div>

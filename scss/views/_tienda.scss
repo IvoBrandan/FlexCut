@@ -3,11 +3,24 @@
 
 
 .tienda__nav{
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.tienda__nav ul li{
+    display: inline-flex;
+    padding: 20px;
+
+
 
 }
+
 .tienda{
     display: flex;
     flex-direction: row;
@@ -18,6 +31,7 @@
 .tienda__producto{
     width: 250px;
     height: 300px;
+    background: $shadow-dark;
     text-align: center;
     padding: 10px;
     border: 1px solid var(--accent);
@@ -27,5 +41,21 @@
     align-items: center;
     justify-content: center;
 }
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primary;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background: $accent;
+
+}
+
 
 /*Fin productos*/

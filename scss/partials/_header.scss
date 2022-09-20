@@ -1,65 +1,94 @@
-.header{
-    padding: 1em 2em 1em 2em ;
-    width: auto;
-    position: sticky;
-    top: 0;
-    background-color: $primary;
-    .header__nav{
+/*INICIO HEADER*/
+.nav{
+    background: $primary;
+    height: 80px;
+    border-bottom: 1px solid $accent;
+    box-shadow: 0 0 5px $accent;
+    
+    .nav__container{
         display: flex;
-        flex-wrap: nowrap;
         align-items: center;
-        justify-content: space-between;
-        padding-right: 10em;
-        padding-left: 10em;
-        height: auto;
-
-        & .nav__logo{
+        justify-content: space-around;
+        height: 80px;
+        
+        .nav__logo{
             display: block ;
-            min-width: 100px;
-            margin-right:20px;
+            min-width: 150px;
+            margin-right:70px;
+            margin-left: 150px;
             cursor: pointer;
-
-            & img{
-                transition: all 0.3s;
-
-                &:hover{
-                    transform: scale;
-                }
+            transition: all 0.3s;
+            
+            &:hover{
+                transform: scale(1.3);
             }
-
         }
-        .nav__list{
+
+
+        .nav__menu{
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-
-            .nav__btn{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 20%;
-                height: auto;
-                
-                .nav__btn--1{
-                    padding: 5px 15px;
-                    text-decoration: none;
-                    color: $secondary;
-                    transition: .4s ease;
-                    border-radius: 15%;
-                    
-                    &:hover{
-                        color: $primary;
-                        background-color:$accent;
-                        box-shadow: 0 0 10px $accent,
-                        0 0 30px $accent,
-                        0 0 70px $accent,
-                        0 0 130px $accent,
-                    }
-                }
-            } 
+            padding: 0 150px 0 150px;
+            z-index: 3000;
         }
+        
+        .nav__item{
+            padding: 5px 15px;
+            text-decoration: none;
+            color: $secondary;
+            border-radius: 15px;
+            transition: .4s ease;
+        }
+        
+        .nav__item:hover{
+            color: $primary;
+            background-color:$accent;
+            box-shadow:
+            0 0 10px $accent,
+            0 0 30px $accent,
+            0 0 70px $accent,
+            0 0 130px $accent,
+        }
+        
     }
 }
 
+.nav__label, .nav__input{
+    display: none;
+}
 
-/*Fin header*/
+/*FIN HEADER*/
+
+/*  HEADER  */
+@media (max-width:720px){
+
+    .nav__label{
+        width: 40px;
+        height: 40px;
+        display: block;
+        cursor: pointer;
+        
+    }
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: $primary;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+    }
+}
+
+/* FIN HEADER */

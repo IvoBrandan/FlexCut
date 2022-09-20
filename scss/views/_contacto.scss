@@ -70,8 +70,11 @@ input:focus{
 }
 
 .contact__img{
-    min-width: 50%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     
     & h3{
