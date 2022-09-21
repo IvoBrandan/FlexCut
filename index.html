@@ -13,11 +13,13 @@
 <body>
 
                             <!-- Inicio header -->
-<header class="container__inicio">
+<header class="container">
     <nav class="nav">
         <div class="nav__container">
             <h1 class="nav__logo">
-                <img src="./images/iconos/logoiniciochico.svg">
+                <a href="./index.html">
+                    <img src="./images/iconos/logoiniciochico.svg">
+                </a>
             </h1>
 
             <label for="menu" class="nav__label">
@@ -49,17 +51,18 @@
     <!--Fin header-->
     <!--Inicio main-->
     
-    <main class=" container presentation">
+    <main class=" container__inicio presentation">
+        <div class="presentation__paragraph">
+            <p class="tittle__big">
+                La mejor opción para tu cabello<br>
+                Atendido solamente por especialistas<br>
+                ¿Que estas esperando?<br>
+            </p>
+            <a class="boton__main" href="./pages/turnos.html">Reserva tu Turno!
+            </a>
+        </div>
         <div class="presentation__logo">
             <img src="./images/iconos/logograndesinfondo.svg" alt="Logo Flexcut Barber Studio"> 
-        </div>
-        <div class="presentation__paragraph">
-            <p class="paragraph__text--big">
-                NO SOLO ES UN CORTE... TAMBIEN ES UNA EXPERIENCIA<br>
-                HECHO ESPECIFICAMENTE PARA PERSONAS QUE BUSCAN LA MEJOR CALIDAD Y UN CORTE<br>
-                PERFECTO, AJUSTADO A TUS GUSTOS<br>
-                ACA VAS A ENCONTRAR TU MEJOR VERSION..
-            </p>
         </div>
     </main>
 
@@ -76,37 +79,54 @@
 
         <div class="section__card">
             <article class="card">
-                <h3 class="subtittle-md">CORTE</h3>
-                <p class="text-xs">
-                    Clásico o moderno. Marcamos tendencia combinando máquinas y tijeras.
-                </p>
-                <button>Ver más</button>
+                <div class="card1">
+                    <img src="./images/cortes/elian2.jpg">
+                </div>
+                <div class="card__text">
+                    <h3 class="subtittle-md">CORTE</h3>
+                    <p class="text-xs">
+                        Clásico o moderno. Marcamos tendencia combinando máquinas y tijeras.
+                    </p>
+                    <a href="#corte" class="boton">VER MÁS</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__text">
+                    <h3 class="subtittle-md">BARBA</h3>
+                    <p class="text-xs">
+                        Afeitada tradicional o recorte de barba. Contamos con el servicio de toalla caliente.
+                    </p>
+                    <a href="#barba" class="boton">VER MÁS</a>
+                </div>
+                <div class="card1">
+                    <img src="./images/cortes/barba1.jpg">
+                </div>
+            </article>
+            <article class="card">
+                <div class="card1">
+                    <img src="./images/cortes/colorfede.jpg">
+                </div>
+                <div class="card__text">
+                    <h3 class="subtittle-md">COLOR</h3>
+                    <p class="text-xs">
+                        Las tendencias y los tonos cambian... Animate vos también.
+                    </p>
+                    <a href="#color" class="boton">VER MÁS</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__text">
+                    <h3 class="subtittle-md">NIÑOS</h3>
+                    <p class="text-xs">
+                        Hoy en dia ello saben lo que quieren, por eso atendemos sus antojos.
+                    </p>
+                    <a href="#niños" class="boton">VER MÁS</a>
+                </div>
+                <div class="card1">
+                    <img src="./images/cortes/cortenene2.jpg">
+                </div>
             </article>
 
-            <article class="card">
-                <h3 class="subtittle-md">BARBA</h3>
-                <p class="text-xs">
-                    Afeitada tradicional o recorte de barba. Contamos con el servicio de toalla caliente.
-                </p>
-                <button>Ver más</button>
-            </article>
-            
-            <article class="card">         
-                <h3 class="subtittle-md">COLOR</h3>
-                <p class="text-xs">
-                    Las tendencias y los tonos cambian... Animate vos también.
-                </p>
-                <button>Ver más</button>
-            </article>
-
-            <article class="card">
-                <h3 class="subtittle-md">NIÑOS</h3>
-                <p class="text-xs">
-                    Hoy en dia ello saben lo que quieren, por eso atendemos sus antojos.
-                </p>
-                <button>Ver más</button>
-            </article>
-        </div>
 
 
                             <!--Fin Section-->

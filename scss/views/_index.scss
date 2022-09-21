@@ -2,13 +2,15 @@
 /*Inicio Main*/
 
 .presentation{
+    height: calc(100vh - 80px);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content:space-around;
     padding: 0 10rem;
 
     .presentation__logo{
+        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -16,9 +18,29 @@
     
     }
     .presentation__paragraph{
-        min-width: auto;
-        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        
     }
+}
+
+.boton__main{
+    margin-top: 40px;
+    padding: 15px 30px;
+    align-items: center;
+    background: #1a1a1a;
+    border: 1px solid #b100ff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.boton__main:hover{
+    background-color: #b100ff;
 }
 
 
@@ -42,22 +64,61 @@
     
     .section__card{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         
         .card{
-            width: 450px;
-            height: 220px;
-            display: flex;
+            height: auto;
             border: 1px solid $accent;
-            flex-direction: column;
-            justify-content: space-evenly;
-            margin: auto;
-            margin: $spacing-sm;
+            margin-bottom: 10px;
             padding: $spacing-sm;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+
+
+            .card__text{
+                max-width: 400px;
+                min-width: 200px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 10px;
+            }
+            .card1{
+                height: 300px;
+                max-width: 400px;
+                min-width: 200px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+    
+            }
         }
     }
     }
 
 /*Fin section*/
+
+
+@media (max-width:720px){
+    .presentation{
+        flex-direction: column;
+        .tittle__big{
+            font-size: 16px;
+        }
+        .boton__main{
+            padding: 5px 10px;
+        }
+    }
+    .card.card__text.card1{
+       flex-direction: column;
+    
+    }
+    }

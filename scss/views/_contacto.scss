@@ -1,7 +1,7 @@
 .contact{
     width: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
-    width: 350px;
+    width: 300px;
 }
         
 .contact__input-comentary{
@@ -29,7 +29,7 @@
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
-    width: 350px;
+    width: 300px;
 }
         
 input{
