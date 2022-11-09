@@ -10,36 +10,41 @@
 
 <body>
                     <!-- Inicio header -->
-    <div class="container">
-        <header class="header">
-             <nav class="header__nav">
-                 <div>
-                     <a class="nav__logo" href="./index.html">
-                         <img src="../images/iconos/logoiniciochico.svg" alt="flexCutArg">
-                     </a>
-                 </div>
-                 <div>
-                     <ul class="nav__list">
-                         <div  class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../index.html">INICIO</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/galeria.html">GALERIA</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/turnos.html">TURNOS</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/tienda.html">TIENDA</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/contacto.html">CONTACTO</a></li>
-                         </div>            
-                     </ul>
-                 </div>
-             </nav>
-         </header>
-    </div>
+
+                    <header class="container">
+    <nav class="nav">
+        <div class="nav__container">
+            <h1 class="nav__logo">
+                <a href="../index.html">
+                    <img src="../images/iconos/logoiniciochico.svg">
+                </a>
+            </h1>
+
+            <label for="menu" class="nav__label">
+                <img src="../images/iconos/menu.svg">
+            </label>
+            <input type="checkbox" id="menu" class="nav__input">
+
+            <div class="nav__menu">
+                <div class="nav__btn">
+                    <a href="../index.html" class="nav__item link__text">INICIO</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./galeria.html" class="nav__item link__text">GALERIA</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./turnos.html" class="nav__item link__text">TURNOS</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./tienda.html" class="nav__item link__text">TIENDA</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./contacto.html" class="nav__item link__text">CONTACTO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
                         <!--Fin header-->
                         <!--Inicio Contacto-->

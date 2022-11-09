@@ -15,12 +15,15 @@
 
 .turnos__container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
 }
 
 .turnos__selection-day{
+    border: 1px solid $accent;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -38,6 +41,7 @@
 
 .calendary__grid{
     max-width: 500px;
+    margin: 20px;
   
 }
 
@@ -53,9 +57,14 @@
 }
 
 .turnos__selection-horario{
+    margin: 20px;
+    max-width: 600px;
     display: flex;
-    flex-direction: column;
-    margin:20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
 
 }
 
@@ -84,6 +93,7 @@
     
     text-decoration: none;
     margin: 10px 10px 10px 10px;
+    padding: 20px;
 
     text-shadow: 0 1px 0 rgba(255,255,255,0.3) ;
     transition:background-color ease-in .3s;
@@ -121,3 +131,11 @@ ol{
     row-gap: 1rem;
 }
 /*Fin sistema turnos*/ 
+
+@media (max-width:500px) {
+    .turnos__selection-menu div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+}
+}

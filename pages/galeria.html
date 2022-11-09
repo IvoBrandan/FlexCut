@@ -4,137 +4,221 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <Galeria> </title>
-    <link rel="stylesheet" href="..//css/bootstrap.min.css">            
+    <title> <Galeria> </title>           
     <link rel="shortcut icon" href="../images/iconos/logoiniciochico.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
 
                     <!-- Inicio header -->
+<header class="container">
+    <nav class="nav">
+        <div class="nav__container">
+            <h1 class="nav__logo">
+                <a href="../index.html">
+                    <img src="../images/iconos/logoiniciochico.svg">
+                </a>
+            </h1>
 
-    <div class="container">
-        <header class="header">
-             <nav class="header__nav">
-                 <div>
-                     <a class="nav__logo" href="./index.html">
-                         <img src="../images/iconos/logoiniciochico.svg" alt="flexCutArg">
-                     </a>
-                 </div>
-                 <div>
-                     <ul class="nav__list">
-                         <div  class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../index.html">INICIO</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/galeria.html">GALERIA</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/turnos.html">TURNOS</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/tienda.html">TIENDA</a></li>
-                         </div>
-                         <div class="nav__btn">
-                             <li><a class="nav__btn--1 link__text" href="../pages/contacto.html">CONTACTO</a></li>
-                         </div>            
-                     </ul>
-                 </div>
-             </nav>
-         </header>
-    </div>
+            <label for="menu" class="nav__label">
+                <img src="../images/iconos/menu.svg">
+            </label>
+            <input type="checkbox" id="menu" class="nav__input">
+
+            <div class="nav__menu">
+                <div class="nav__btn">
+                    <a href="../index.html" class="nav__item link__text">INICIO</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./galeria.html" class="nav__item link__text">GALERIA</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./turnos.html" class="nav__item link__text">TURNOS</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./tienda.html" class="nav__item link__text">TIENDA</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./contacto.html" class="nav__item link__text">CONTACTO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    
 
                         <!--Fin header-->
                         <!--Inicio Galeria-->
-<section>
-    <article id="carouselExampleIndicators" class="container__galeria carousel slide pointer-event" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <h2 class="gallery__subtittle tittle__big">CORTES MODERNOS</h2>
-                <div class="carousel-item active">
-                <img src="../images/cortes/elian2.jpg" class="d-block w-100" alt="corte moderno">
-                </div>
-                <div class="carousel-item">
-                <img src="../images/cortes/crestadani.jpg" class="d-block w-100" alt="corte moderno">
-                </div>
-                <div class="carousel-item">
-                <img src="../images/cortes/nene1.jpg" class="d-block w-100" alt="corte moderno">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-    </article>
-    <article id="carouselExampleIndicators2" class="container__galeria carousel slide pointer-event" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <h2 class="gallery__subtittle tittle__big">CAMBIOS DE LOOK</h2>
-                <div class="carousel-item active">
-                <img src="../images/cortes/cambiodelookantes.jpg" class="d-block w-100" alt="cambios de look">
-                </div>
-                <div class="carousel-item">
-                <img src="../images/cortes/cambiodelookdespues.jpg" class="d-block w-100" alt="cambios de look">
-                </div>
-                <div class="carousel-item">
-                <img src="../images/cortes/cambiodelookdespues2.jpg" class="d-block w-100" alt="cambios de look">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-    </article>
-    <article id="carouselExampleIndicators3" class="container__galeria carousel slide pointer-event" data-bs-ride="true">
-            <div class="carousel-inner">
-                <h2 class="gallery__subtittle tittle__big">COLORES</h2>
-                <div class="carousel-item active">
-                <img src="../images/cortes/colorlea3.jpg" class="d-block w-100" alt="colores">
-                </div>
-                <div class="carousel-item">
-                <img src="../images/cortes/colorelian1.jpg" class="d-block w-100" alt="colores">
-                </div>
-                <div class="carousel-item">
-                <img src="../images/cortes/colorveno2.jpg" class="d-block w-100" alt="colores">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-    </article>
+    <h2 id="corte" class="link__text link__text-galeria">CORTES<h2>            
+    <span class="linea"></span>
+    <section class="galeria">
+        <a href="#corte1" alt="corte de pelo">
+            <img src="../images/cortes/elian2.jpg">
+        </a>
+        <a href="#corte2" alt="corte de pelo">
+            <img src="../images/cortes/crestadani.jpg">
+        </a>
+        <a href="#corte3" alt="corte de pelo">
+            <img src="../images/cortes/cortebruno.jpg">
+        </a>
+        <a href="#corte4" alt="corte de pelo">
+            <img src="../images/cortes/crestamati.jpg">
+        </a>
+        <a href="#corte5" alt="corte de pelo">
+            <img src="../images/cortes/crestaluquitas.jpg">
+        </a>
+        <a href="#corte6" alt="corte de pelo">
+            <img src="../images/cortes/cortelucas.jpg">
+        </a>
+    </section>
+    <h2 id="barba" class="link__text link__text-galeria">BARBAS<h2>            
+    <span class="linea"></span>
+    <section class="galeria">
+        <a  href="#barba1" alt="barbas">
+            <img src="../images/cortes/barba1.jpg">
+        </a>
+        <a href="#barba2" alt="barbas">
+            <img src="../images/cortes/barba4.jpg">
+        </a>
+        <a href="#barba3" alt="barbas">
+            <img src="../images/cortes/barba3.jpg">
+        </a>
+    </section>
+    <h2 id="color" class="link__text link__text-galeria">COLORES</h2>           
+    <span class="linea"></span>
+    <section class="galeria">
+        <a href="#color1" alt="color">
+            <img src="../images/cortes/colorelian1.jpg">
+        </a>
+        <a href="#color2" alt="color">
+            <img src="../images/cortes/colorlea3.jpg">
+        </a>
+        <a href="#color3" alt="color">
+            <img src="../images/cortes/colorveno2.jpg">
+        </a>
+    </section>  
 </section>
-        
+<h2 id="niños" class="link__text link__text-galeria">NIÑOS</h2>            
+<span class="linea"></span>
+<section class="galeria">
+    <a href="#nene1" alt="">
+        <img src="../images/cortes/nene1.jpg">
+    </a>
+    <a href="#nene2" alt="">
+        <img src="../images/cortes/cortenene2.jpg">
+    </a>
+    <a href="#nene3" alt="">
+        <img src="../images/cortes/nene3.jpg">
+    </a>
+</section>  
+
+<!--cortes-->
+    <article class="light-box" id="corte1">
+        <a href="#corte6" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/elian2.jpg"> 
+        <a href="#corte2" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#corte" class="close">X</a>
+    </article> 
+
+    <article class="light-box" id="corte2">
+        <a href="#corte1" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/crestadani.jpg"> 
+        <a href="#corte3" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#corte" class="close">X</a>
+    </article> 
+
+    <article class="light-box" id="corte3">
+        <a href="#corte2" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/cortebruno.jpg"> 
+        <a href="#corte4" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#corte" class="close">X</a>
+    </article> 
+    <article class="light-box" id="corte4">
+        <a href="#corte3" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/crestamati.jpg"> 
+        <a href="#corte5" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#corte" class="close">X</a>
+    </article> 
+
+    <article class="light-box" id="corte5">
+        <a href="#corte4" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/crestaluquitas.jpg"> 
+        <a href="#corte6" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#corte" class="close">X</a>
+    </article> 
+
+    <article class="light-box" id="corte6">
+        <a href="#corte5" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/cortelucas.jpg"> 
+        <a href="#corte1" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#corte" class="close">X</a>
+    </article> 
+<!--cortes-->
+<!--barba-->
+    <article class="light-box" id="barba1">
+        <a href="#barba3" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/barba1.jpg"> 
+        <a href="#barba2" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#barba" class="close">X</a>
+    </article> 
+
+    <article class="light-box" id="barba2">
+        <a href="#barba1" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/barba4.jpg"> 
+        <a href="#barba3" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#barba" class="close">X</a>
+    </article> 
+
+    <article class="light-box" id="barba3">
+        <a href="#barba2" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/barba3.jpg"> 
+        <a href="#barba1" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#barba" class="close">X</a>
+    </article> 
+<!--barba-->
+<!--color-->
+    <article class="light-box" id="color1">
+        <a href="#color3" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/colorelian1.jpg"> 
+        <a href="#color2" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#color" class="close">X</a>
+    </article> 
+
+    <article class="light-box" id="color2">
+        <a href="#color1" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/colorlea3.jpg"> 
+        <a href="#color3" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#color" class="close">X</a>
+    </article> 
+
+    <article class="light-box" id="color3">
+        <a href="#color2" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/colorveno2.jpg"> 
+        <a href="#color1" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#color" class="close">X</a>
+    </article>
+    <!--niños-->
+    <article class="light-box" id="nene1">
+        <a href="#nene3" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/nene1.jpg"> 
+        <a href="#nene2" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#niños" class="close">X</a>
+    </article> 
+
+    <article class="light-box" id="nene2">
+        <a href="#nene1" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/cortenene2.jpg"> 
+        <a href="#nene3" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#niños" class="close">X</a>
+    </article> 
+
+    <article class="light-box" id="nene3">
+        <a href="#nene2" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="../images/cortes/nene3.jpg"> 
+        <a href="#nene1" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#niños" class="close">X</a>
+    </article>              
+
 
                         <!--Fin Galeria-->  
                             <!--Inicio Footer-->
@@ -168,5 +252,6 @@
     </footer>
 
                             <!--Fin footer-->
+    <script src="https://kit.fontawesome.com/a0a1fe74b3.js" crossorigin="anonymous"></script>
 </body>
 </html>

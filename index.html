@@ -4,57 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <Flex-Cut> </title>
+    <title> <Flex-Cut> | Inicio </title>
     <link rel="shortcut icon" href="./images/iconos/logoiniciochico.svg" type="image/x-icon"> 
     <link rel="stylesheet" href="./css/estilo.css">
+    <meta name="keyword" content="barberia barba pelo fade degrade corte clasico color niños ">
+    <meta name="description" content="En <Flex-Cut> BarberStudio vas a encontrar a los mejores profesionales, con la mejor calidad y atención para tu cabello ... Reserva tu turno AHORA!">
 </head>
 <body>
 
                             <!-- Inicio header -->
-<div class="container__inicio">
-    <header class="header">
-        <nav class="header__nav">
-            <div>
-                <a class="nav__logo" href="./index.html">
-                    <img src="./images/iconos/logoiniciochico.svg" alt="flexCutArg">
+<header class="container">
+    <nav class="nav">
+        <div class="nav__container">
+            <h1 class="nav__logo">
+                <a href="./index.html">
+                    <img src="./images/iconos/logoiniciochico.svg">
                 </a>
+            </h1>
+
+            <label for="menu" class="nav__label">
+                <img src="./images/iconos/menu.svg">
+            </label>
+            <input type="checkbox" id="menu" class="nav__input">
+
+            <div class="nav__menu">
+                <div class="nav__btn">
+                    <a href="./index.html" class="nav__item link__text">INICIO</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./pages/galeria.html" class="nav__item link__text">GALERIA</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./pages/turnos.html" class="nav__item link__text">TURNOS</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./pages/tienda.html" class="nav__item link__text">TIENDA</a>
+                </div>
+                <div class="nav__btn">
+                    <a href="./pages/contacto.html" class="nav__item link__text">CONTACTO</a>
+                </div>
             </div>
-            <div>
-                <ul class="nav__list">
-                    <div  class="nav__btn">
-                        <li><a class="nav__btn--1 link__text" href="index.html">INICIO</a></li>
-                    </div>
-                    <div class="nav__btn">
-                        <li><a class="nav__btn--1 link__text" href="./pages/galeria.html">GALERIA</a></li>
-                    </div>
-                    <div class="nav__btn">
-                        <li><a class="nav__btn--1 link__text" href="./pages/turnos.html">TURNOS</a></li>
-                    </div>
-                    <div class="nav__btn">
-                        <li><a class="nav__btn--1 link__text" href="./pages/tienda.html">TIENDA</a></li>
-                    </div>
-                    <div class="nav__btn">
-                        <li><a class="nav__btn--1 link__text" href="./pages/contacto.html">CONTACTO</a></li>
-                    </div>            
-                </ul>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
     
     <!--Fin header-->
     <!--Inicio main-->
     
-    <main class=" container presentation">
+    <main class=" container__inicio presentation">
+        <div class="presentation__paragraph">
+            <p class="tittle__big">
+                La mejor opción para tu cabello<br>
+                Atendido solamente por especialistas<br>
+                ¿Que estas esperando?<br>
+            </p>
+            <a class="boton__main" href="./pages/turnos.html">Reserva tu Turno!
+            </a>
+        </div>
         <div class="presentation__logo">
             <img src="./images/iconos/logograndesinfondo.svg" alt="Logo Flexcut Barber Studio"> 
-        </div>
-        <div class="presentation__paragraph">
-            <p class="paragraph__text--big">
-                NO SOLO ES UN CORTE... TAMBIEN ES UNA EXPERIENCIA<br>
-                HECHO ESPECIFICAMENTE PARA PERSONAS QUE BUSCAN LA MEJOR CALIDAD Y UN CORTE<br>
-                PERFECTO, AJUSTADO A TUS GUSTOS<br>
-                ACA VAS A ENCONTRAR TU MEJOR VERSION..
-            </p>
         </div>
     </main>
 
@@ -71,37 +79,54 @@
 
         <div class="section__card">
             <article class="card">
-                <h3 class="subtittle-md">CORTE</h3>
-                <p class="text-xs">
-                    Clásico o moderno. Marcamos tendencia combinando máquinas y tijeras.
-                </p>
-                <button>Ver más</button>
+                <div class="card1">
+                    <img src="./images/cortes/elian2.jpg">
+                </div>
+                <div class="card__text">
+                    <h3 class="subtittle-md">CORTE</h3>
+                    <p class="text-xs">
+                        Clásico o moderno. Marcamos tendencia combinando máquinas y tijeras.
+                    </p>
+                    <a href="#corte" class="boton">VER MÁS</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__text">
+                    <h3 class="subtittle-md">BARBA</h3>
+                    <p class="text-xs">
+                        Afeitada tradicional o recorte de barba. Contamos con el servicio de toalla caliente.
+                    </p>
+                    <a href="#barba" class="boton">VER MÁS</a>
+                </div>
+                <div class="card1">
+                    <img src="./images/cortes/barba1.jpg">
+                </div>
+            </article>
+            <article class="card">
+                <div class="card1">
+                    <img src="./images/cortes/colorfede.jpg">
+                </div>
+                <div class="card__text">
+                    <h3 class="subtittle-md">COLOR</h3>
+                    <p class="text-xs">
+                        Las tendencias y los tonos cambian... Animate vos también.
+                    </p>
+                    <a href="#color" class="boton">VER MÁS</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__text">
+                    <h3 class="subtittle-md">NIÑOS</h3>
+                    <p class="text-xs">
+                        Hoy en dia ello saben lo que quieren, por eso atendemos sus antojos.
+                    </p>
+                    <a href="#niños" class="boton">VER MÁS</a>
+                </div>
+                <div class="card1">
+                    <img src="./images/cortes/cortenene2.jpg">
+                </div>
             </article>
 
-            <article class="card">
-                <h3 class="subtittle-md">BARBA</h3>
-                <p class="text-xs">
-                    Afeitada tradicional o recorte de barba. Contamos con el servicio de toalla caliente.
-                </p>
-                <button>Ver más</button>
-            </article>
-            
-            <article class="card">         
-                <h3 class="subtittle-md">COLOR</h3>
-                <p class="text-xs">
-                    Las tendencias y los tonos cambian... Animate vos también.
-                </p>
-                <button>Ver más</button>
-            </article>
-
-            <article class="card">
-                <h3 class="subtittle-md">NIÑOS</h3>
-                <p class="text-xs">
-                    Hoy en dia ello saben lo que quieren, por eso atendemos sus antojos.
-                </p>
-                <button>Ver más</button>
-            </article>
-        </div>
 
 
                             <!--Fin Section-->
@@ -137,6 +162,12 @@
     </footer>
 
                             <!--Fin footer-->
+
+    <script src="./js/clases/GestionarProductos.js"></script>
+    <script src="./js/clases/Productos.js"></script>
+    <script src="./js/clases/GestionarTurnos.js"></script>
+    <script src="./js/clases/Turnos.js"></script>                          
+    <script src="./js/index.js"></script>
 
 </body>
 </html>
